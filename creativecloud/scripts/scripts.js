@@ -190,7 +190,7 @@ decorateArea();
   window.addEventListener("message", async (event) => {
     const { pageUrl, marquee, unity } = JSON.parse(event.data);
     const d = document.querySelector('main > div');
-    if (((currPageUrl != pageUrl) && !document.querySelector('.marquee')) || !document.querySelector('.marquee .interactive-holder')) {
+    if (((currPageUrl != pageUrl) || !document.querySelector('.marquee')) || !document.querySelector('.marquee .interactive-holder')) {
       currPageUrl = pageUrl;
       d.innerHTML = marquee;
       d.innerHTML += unity;
