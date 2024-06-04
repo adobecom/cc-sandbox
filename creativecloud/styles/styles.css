@@ -14,3 +14,7 @@
   max-width: var(--grid-container-width);
   margin: 0 auto;
 }
+
+body {
+  background: transparent;
+}
