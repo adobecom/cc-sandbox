@@ -269,7 +269,7 @@ function getWorkFlowInformation(el) {
     'workflow-generate-selector': ['generate', 'selector-tray', 'generate', 'start-over'],
     'workflow-generate-triple-selector': ['generate', 'selector-tray', 'generate', 'selector-tray', 'generate', 'selector-tray', 'start-over'],
     'workflow-redirect': ['redirect'],
-    'workflow-compress-pdf': ['compress'],,
+    'workflow-compress-pdf': ['compress'],
     'workflow-chat-pdf': ['chat-pdf'],
   };
   const wfNames = Object.keys(intWorkFlowConfig);
