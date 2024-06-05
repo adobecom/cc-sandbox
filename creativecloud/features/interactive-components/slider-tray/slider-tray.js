@@ -26,7 +26,7 @@ export default async function stepInit(data) {
 }
 
 async function createSelectorTray(data, layer) {
-  const sliderTray = createTag('div', { class: 'sliderTray' });
+  const sliderTray = createTag('div', { class: 'sliderTray slidershow' });
   const menu = createTag('div', { class: 'menu' });
   const config = data.stepConfigs[data.stepIndex];
   const options = config.querySelectorAll(':scope > div ul .icon, :scope > div ol .icon');
