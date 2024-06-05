@@ -20,6 +20,10 @@
   z-index: 5;
 }
 
+.interactive-enabled.split .interactive-holder > video {
+  display: none;
+} 
+
 .interactive-enabled.light .step-selector-tray-edits .selector-tray {
   background: var(--prompt-btn-fill-light);
   color: var(--prompt-text-color-light);
@@ -121,7 +125,7 @@
   .interactive-enabled
     .interactive-holder.step-selector-tray-edits.step-removebg {
     max-width: 100%;
-    max-height: 560px;
+    /* max-height: 560px; */
     object-fit: fill;
   }
 
@@ -376,7 +380,7 @@
 
 @media (min-width: 600px) and (max-width: 1199px) {
   .marquee.split.interactive-enabled .asset img {
-    height: 360px !important;
+    /* height: 360px !important; */
   }
 
   .interactive-enabled .step-selector-tray-edits .selector-tray {
@@ -436,4 +440,33 @@
 
 .interactive-enabled .step-selector-tray-edits.step-removebg video {
   display: none;
+}
+
+@media screen and (min-width: 600px) {
+ .interactive-enabled.split .interactive-holder {
+    height: 100%;
+    min-height: 100%;
+    width: 50vw;
+    min-width: 50vw;
+  }  
+
+  .interactive-enabled.split .interactive-holder > picture img {
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .interactive-enabled.split .interactive-holder {
+    height: 700px;
+    min-height: 700px;
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .interactive-enabled.split .interactive-holder > picture img {
+    height: 700px;
+    min-height: 700px;
+    width: 100%;
+    min-width: 100%;
+  }
 }
