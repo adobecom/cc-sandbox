@@ -447,6 +447,12 @@
  .interactive-enabled.split .interactive-holder > picture img {
    height: 100%;
  }
+  
+  .interactive-enabled .step-slider-tray .selector-tray .product-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 @media screen and (min-width: 1024px) {
