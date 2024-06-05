@@ -56,7 +56,12 @@ function handleInput(option, sliderTray, menu, layer) {
   const sliderType = inputType.split('-')[0];
   if (inputType.includes('slider')) inputType = 'slider';
   const sibling = option.nextSibling;
-  const text = sibling.nodeValue.trim();
+  let text = '' 
+  try {
+    text = sibling.nodeValue.trim();
+  } catch (e) {
+    text = '';
+  }
   let picture = '';
   if (sibling.nextSibling && sibling.nextSibling.tagName === 'PICTURE') {
     picture = sibling.nextSibling;
