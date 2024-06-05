@@ -63,7 +63,7 @@ function handleInput(option, sliderTray, menu, layer) {
     text = 'Label';
   }
   let picture = '';
-  if (sibling.nextSibling && sibling.nextSibling.tagName === 'PICTURE') {
+  if (sibling?.nextSibling && sibling.nextSibling.tagName === 'PICTURE') {
     picture = sibling.nextSibling;
   }
   switch (inputType) {
