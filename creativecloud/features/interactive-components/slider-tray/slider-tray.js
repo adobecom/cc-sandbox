@@ -60,7 +60,7 @@ function handleInput(option, sliderTray, menu, layer) {
   try {
     text = sibling.nodeValue.trim();
   } catch (e) {
-    text = '';
+    text = 'Hue';
   }
   let picture = '';
   if (sibling.nextSibling && sibling.nextSibling.tagName === 'PICTURE') {
