@@ -682,7 +682,7 @@
 
 @media screen and (min-width: 1200px) {
   .marquee.split.interactive-enabled .asset img {
-    max-height: 560px;
+    /* max-height: 560px; */
   }
 
   .interactive-enabled.row-reversed .step-slider-tray .selector-tray {
