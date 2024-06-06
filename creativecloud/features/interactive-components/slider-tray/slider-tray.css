@@ -623,7 +623,7 @@
   width: 0;
 }
 
-@media screen and (min-width: 1200px) {  
+@media screen and (min-width: 1200px) {
   .interactive-enabled
     .interactive-holder.step-slider-tray.step-removebg {
     max-width: 100%;
@@ -700,10 +700,7 @@
     right: 56%;
   }
 
-  [dir='rtl']
-    .interactive-enabled.row-reversed
-    .step-slider-tray
-    .selector-tray {
+  [dir='rtl'] .interactive-enabled.row-reversed .step-slider-tray .selector-tray {
     right: auto;
     left: 56%;
   }
@@ -711,113 +708,103 @@
 
 @media screen and (min-width: 600px) {
 
-.interactive-enabled
-  .step-slider-tray
-  .layer
-  .gray-button.start-over-button.upload-button {
-  z-index: 4;
-  cursor: pointer;
-  max-width: 190px;
-}
+  .interactive-enabled .step-slider-tray .layer .gray-button.start-over-button.upload-button {
+    z-index: 4;
+    cursor: pointer;
+    min-width: 150px;
+  }
 
-.interactive-enabled .step-slider-tray .upload-button label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  cursor: pointer;
-}
+  .interactive-enabled .step-slider-tray .upload-button label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+  }
 
-.interactive-enabled
-  .step-slider-tray
-  .upload-button
-  label
-  span:first-of-type {
-  width: 70px;
-  max-width: 70px;
-  cursor: pointer;
-}
+  .interactive-enabled .step-slider-tray .upload-button label span:first-of-type {
+    width: 70px;
+    min-width: 70px;
+    cursor: pointer;
+  }
 
-.interactive-enabled
-  .step-slider-tray
-  .upload-button
-  label
-  span:first-of-type {
-  width: 150px;
-  max-width: 150px;
-  display: block;
-  cursor: pointer;
-}
+  .interactive-enabled .step-slider-tray .upload-button label span:first-of-type {
+    /* width: 10px; */
+    min-width: 50px;
+    display: block;
+    cursor: pointer;
+  }
 
-.interactive-enabled .step-slider-tray .upload-button input {
-  opacity: 0;
-  width: 0;
-  cursor: pointer;
-}
+  .interactive-enabled .step-slider-tray .upload-button input {
+    opacity: 0;
+    width: 0;
+    cursor: pointer;
+  }
 
-.interactive-enabled .step-slider-tray .upload-button svg {
-  transform: rotate(0);
-  cursor: pointer;
-}
-
-.interactive-enabled .step-slider-tray .upload-button.processing svg {
-  transform: rotate(90deg);
-}
-
-@keyframes animationKeyFrame {
-  0% {
+  .interactive-enabled .step-slider-tray .upload-button svg {
     transform: rotate(0);
+    cursor: pointer;
   }
-  50% {
-    transform: rotate(45deg);
-  }
-  100% {
+
+  .interactive-enabled .step-slider-tray .upload-button.processing svg {
     transform: rotate(90deg);
   }
-}
 
-@keyframes animationReturnKeyFrame {
-  0% {
-    transform: rotate(90deg);
+  @keyframes animationKeyFrame {
+    0% {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(45deg);
+    }
+    100% {
+      transform: rotate(90deg);
+    }
   }
-  50% {
-    transform: rotate(45deg);
+
+  @keyframes animationReturnKeyFrame {
+    0% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(45deg);
+    }
+    100% {
+      transform: rotate(0);
+    }
   }
-  100% {
-    transform: rotate(0);
+
+  .interactive-holder {
+    background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
+      linear-gradient(135deg, #ccc 25%, transparent 25%),
+      linear-gradient(45deg, transparent 75%, #ccc 75%),
+      linear-gradient(135deg, transparent 75%, #ccc 75%);
+    background-size: 25px 25px;
+    background-position: 0 0, 12.5px 0, 12.5px -12.5px, 0px 12.5px;
+    border-radius: 16px;
   }
-}
 
-.interactive-holder {
-  background-image: linear-gradient(45deg, #ccc 25%, transparent 25%),
-    linear-gradient(135deg, #ccc 25%, transparent 25%),
-    linear-gradient(45deg, transparent 75%, #ccc 75%),
-    linear-gradient(135deg, transparent 75%, #ccc 75%);
-  background-size: 25px 25px;
-  background-position: 0 0, 12.5px 0, 12.5px -12.5px, 0px 12.5px;
-  border-radius: 16px;
-}
+  .interactive-enabled .step-slider-tray .tray-items svg {
+    top: 5px;
+    height: 30px;
+    width: 30px;
+  }
 
-.interactive-enabled .step-slider-tray .tray-items svg {
-  top: 5px;
-  height: 30px;
-  width: 30px;
-}
+  .interactive-enabled .step-slider-tray .tray-items .product-icon {
+    margin-top: 7px;
+  }
 
-.interactive-enabled .step-slider-tray .tray-items .product-icon {
-  margin-top: 7px;
-}
+  .interactive-enabled .step-slider-tray .tray-items .product-icon svg {
+    height: 40px;
+    width: 40px;
+  }
 
-.interactive-enabled .step-slider-tray .tray-items .product-icon svg {
-  height: 40px;
-  width: 40px;
-}
-
-.interactive-enabled .step-slider-tray .tray-items .gray-button {
-  font-size: 18px;
-  line-height: 21px;
-  border: 1px solid #ccc;
-  box-shadow: none;
+  .interactive-enabled .step-slider-tray .tray-items .gray-button {
+    font-size: 18px;
+    line-height: 21px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 1199px) {
@@ -845,7 +832,7 @@
 
   .interactive-enabled .step-slider-tray .layer .gray-button.start-over-button.upload-button { 
     padding: 8px;
-    max-width: 150px;
+    /* max-width: 150px; */
   }
 }
 
@@ -869,6 +856,6 @@
 
   .interactive-enabled .step-slider-tray .layer .gray-button.start-over-button.upload-button { 
     padding: 5px;
-    max-width: 142px;
+    /* max-width: 142px; */
   }
 }
