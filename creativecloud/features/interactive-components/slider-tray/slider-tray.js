@@ -445,13 +445,8 @@ function uploadButton(data) {
 function selectorTrayWithImgs(layer, data) {
   const selectorTray = createTag('div', { class: 'body-s selector-tray' });
   const trayItems = createTag('div', { class: 'tray-items' });
-  const productIconLR = createTag('div', { class: 'product-icon' });
+  const productIcon = createTag('div', { class: 'product-icon' });
   const productSvg = `<svg xmlns="http://www.w3.org/2000/svg" id="Lightroom_40" data-name="Lightroom 40" width="40" height="39" viewBox="0 0 40 39">
-  <path id="Path_99544" data-name="Path 99544" d="M7.125,0H33a7.005,7.005,0,0,1,7,7.1V31.9A7.11,7.11,0,0,1,32.875,39H7.125A7.11,7.11,0,0,1,0,31.9V7.1A7.032,7.032,0,0,1,7.125,0Z" fill="#001e36"/>
-  <path id="Path_99545" data-name="Path 99545" d="M18.975,25.625H8.35a.269.269,0,0,1-.25-.25V8.25A.269.269,0,0,1,8.35,8H11.6l.25.125h0v14H19.6a.269.269,0,0,1,.25.25l-.625,3L19.1,25.5Z" transform="translate(2.025 1.942)" fill="#31a8ff"/>
-  <path id="Path_99546" data-name="Path 99546" d="M18.925,11.45H21.8c.125,0,.25.125.375.25a.459.459,0,0,1,.125.375c0,.125.125.375.125.5V13.2a4.5,4.5,0,0,1,1.75-1.375,5.69,5.69,0,0,1,2.5-.625.436.436,0,0,1,.25.125h0V14.7a.269.269,0,0,1-.25.25,5.431,5.431,0,0,0-3.125.625,2.242,2.242,0,0,0-.875.625v8.5a.269.269,0,0,1-.25.25h-3.25a.269.269,0,0,1-.25-.25V12.825A3.461,3.461,0,0,0,18.8,11.7l.125-.25Z" transform="translate(4.7 2.731)" fill="#31a8ff"/>
-</svg>`;
-  const productSvgPS = `<svg xmlns="http://www.w3.org/2000/svg" id="Lightroom_40" data-name="Lightroom 40" width="40" height="39" viewBox="0 0 40 39">
   <path id="Path_99544" data-name="Path 99544" d="M7.125,0H33a7.005,7.005,0,0,1,7,7.1V31.9A7.11,7.11,0,0,1,32.875,39H7.125A7.11,7.11,0,0,1,0,31.9V7.1A7.032,7.032,0,0,1,7.125,0Z" fill="#001e36"/>
   <path id="Path_99545" data-name="Path 99545" d="M18.975,25.625H8.35a.269.269,0,0,1-.25-.25V8.25A.269.269,0,0,1,8.35,8H11.6l.25.125h0v14H19.6a.269.269,0,0,1,.25.25l-.625,3L19.1,25.5Z" transform="translate(2.025 1.942)" fill="#31a8ff"/>
   <path id="Path_99546" data-name="Path 99546" d="M18.925,11.45H21.8c.125,0,.25.125.375.25a.459.459,0,0,1,.125.375c0,.125.125.375.125.5V13.2a4.5,4.5,0,0,1,1.75-1.375,5.69,5.69,0,0,1,2.5-.625.436.436,0,0,1,.25.125h0V14.7a.269.269,0,0,1-.25.25,5.431,5.431,0,0,0-3.125.625,2.242,2.242,0,0,0-.875.625v8.5a.269.269,0,0,1-.25.25h-3.25a.269.269,0,0,1-.25-.25V12.825A3.461,3.461,0,0,0,18.8,11.7l.125-.25Z" transform="translate(4.7 2.731)" fill="#31a8ff"/>
@@ -460,8 +455,6 @@ function selectorTrayWithImgs(layer, data) {
   const hueSat = hueSatBtn(data);
   const uploadCTA = uploadButton(data);
   const continueCTA = createUploadPSButton(data);
-  let productIcon = productIconLR;
-  if (continueCTA && continueCTA.innerText && continueCTA.innerText.toLowerCase().includes('photoshop')) productIcon = productIconPS;
   trayItems.append(productIcon, hueSat, uploadCTA, continueCTA);
   selectorTray.append(trayItems);
   return selectorTray;
