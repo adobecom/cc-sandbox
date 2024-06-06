@@ -1,3 +1,7 @@
+.gray-button.start-over-button.continue.hide {
+  display: none;
+}
+
 .interactive-enabled .step-slider-tray .sliderTray {
   display: flex;
   flex-direction: column;
