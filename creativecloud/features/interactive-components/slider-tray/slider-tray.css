@@ -857,6 +857,6 @@
 
   .interactive-enabled .step-slider-tray .layer .gray-button.start-over-button.upload-button { 
     padding: 5px;
-    /* max-width: 142px; */
+    max-width: 142px;
   }
 }
