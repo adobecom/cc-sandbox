@@ -457,7 +457,7 @@ function selectorTrayWithImgs(layer, data) {
   <path id="Path_99546" data-name="Path 99546" d="M18.925,11.45H21.8c.125,0,.25.125.375.25a.459.459,0,0,1,.125.375c0,.125.125.375.125.5V13.2a4.5,4.5,0,0,1,1.75-1.375,5.69,5.69,0,0,1,2.5-.625.436.436,0,0,1,.25.125h0V14.7a.269.269,0,0,1-.25.25,5.431,5.431,0,0,0-3.125.625,2.242,2.242,0,0,0-.875.625v8.5a.269.269,0,0,1-.25.25h-3.25a.269.269,0,0,1-.25-.25V12.825A3.461,3.461,0,0,0,18.8,11.7l.125-.25Z" transform="translate(4.7 2.731)" fill="#31a8ff"/>
 </svg>`;
   productIcon.innerHTML = `${productSvg}`;
-  console.log(continueCTA.innerHTML)
+  console.log(continueCTA.innerText)
   const hueSat = hueSatBtn(data);
   const uploadCTA = uploadButton(data);
   const continueCTA = createUploadPSButton(data);
