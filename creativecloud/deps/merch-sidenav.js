@@ -1,4 +1,4 @@
-// branch: catalog-regressions-4 commit: 90641e42ad012c2386133cbd2df855f468842b2d Wed, 29 May 2024 12:05:08 GMT
+// branch: MWPW-147716-background-scroll commit: 39f55062db7c8b58f3704c3a9f13c7bc2458ecb6 Thu, 06 Jun 2024 07:52:38 GMT
 
 // src/sidenav/merch-sidenav.js
 import { html as html4, css as css5, LitElement as LitElement4 } from "/libs/deps/lit-all.min.js";
@@ -381,6 +381,46 @@ customElements.define(
 var SPECTRUM_MOBILE_LANDSCAPE = "(max-width: 700px)";
 var TABLET_DOWN = "(max-width: 1199px)";
 
+// src/bodyScrollLock.js
+var isIosDevice = typeof window !== "undefined" && window.navigator && window.navigator.platform && (/iP(ad|hone|od)/.test(window.navigator.platform) || window.navigator.platform === "MacIntel" && window.navigator.maxTouchPoints > 1);
+var documentListenerAdded = false;
+var previousBodyOverflowSetting;
+var disableBodyScroll = (targetElement, options) => {
+  if (!targetElement)
+    return;
+  if (isIosDevice) {
+    document.body.style.position = "fixed";
+    targetElement.ontouchmove = (event) => {
+      if (event.targetTouches.length === 1) {
+        event.stopPropagation();
+      }
+    };
+    if (!documentListenerAdded) {
+      document.addEventListener("touchmove", (e) => e.preventDefault());
+      documentListenerAdded = true;
+    }
+  } else {
+    previousBodyOverflowSetting = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+  }
+};
+var enableBodyScroll = (targetElement) => {
+  if (!targetElement)
+    return;
+  if (isIosDevice) {
+    targetElement.ontouchstart = null;
+    targetElement.ontouchmove = null;
+    document.body.style.position = "";
+    document.removeEventListener("touchmove", (e) => e.preventDefault());
+    documentListenerAdded = false;
+  } else {
+    if (previousBodyOverflowSetting !== void 0) {
+      document.body.style.overflow = previousBodyOverflowSetting;
+      previousBodyOverflowSetting = void 0;
+    }
+  }
+};
+
 // src/sidenav/merch-sidenav.js
 document.addEventListener("sp-opened", () => {
   document.body.classList.add("merch-modal");
@@ -504,6 +544,7 @@ var MerchSideNav = class extends LitElement4 {
   }
   openModal() {
     this.updateComplete.then(async () => {
+      disableBodyScroll(this.dialog);
       const options = {
         trigger: this.#target,
         notImmediatelyClosable: true,
@@ -515,6 +556,7 @@ var MerchSideNav = class extends LitElement4 {
       );
       overlay.addEventListener("close", () => {
         this.modal = false;
+        enableBodyScroll(this.dialog);
       });
       this.shadowRoot.querySelector("sp-theme").append(overlay);
     });
