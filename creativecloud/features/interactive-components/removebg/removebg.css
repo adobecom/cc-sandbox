@@ -275,7 +275,7 @@
   .gray-button.start-over-button.upload-button {
   z-index: 4;
   cursor: pointer;
-  max-width: 190px;
+  min-width: 50px;
 }
 
 .interactive-enabled .step-selector-tray-edits .upload-button label {
@@ -301,7 +301,7 @@
   .upload-button
   label
   span:first-of-type {
-  width: 150px;
+  width: auto;
   max-width: 150px;
   display: block;
   cursor: pointer;
@@ -406,7 +406,8 @@
 
   .interactive-enabled .step-selector-tray-edits .layer .gray-button.start-over-button.upload-button { 
     padding: 8px;
-    max-width: 150px;
+    width: auto;
+    min-width: 100px;
   }
 }
 
@@ -434,7 +435,7 @@
 
   .interactive-enabled .step-selector-tray-edits .layer .gray-button.start-over-button.upload-button { 
     padding: 5px;
-    max-width: 142px;
+    min-width: 100px;
   }
 }
 
