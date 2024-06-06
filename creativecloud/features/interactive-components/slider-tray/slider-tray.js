@@ -445,7 +445,7 @@ function uploadButton(data) {
 function selectorTrayWithImgs(layer, data) {
   const selectorTray = createTag('div', { class: 'body-s selector-tray' });
   const trayItems = createTag('div', { class: 'tray-items' });
-  const productIcon = createTag('div', { class: 'product-icon' });
+  const productIconLR = createTag('div', { class: 'product-icon' });
   const productSvg = `<svg xmlns="http://www.w3.org/2000/svg" id="Lightroom_40" data-name="Lightroom 40" width="40" height="39" viewBox="0 0 40 39">
   <path id="Path_99544" data-name="Path 99544" d="M7.125,0H33a7.005,7.005,0,0,1,7,7.1V31.9A7.11,7.11,0,0,1,32.875,39H7.125A7.11,7.11,0,0,1,0,31.9V7.1A7.032,7.032,0,0,1,7.125,0Z" fill="#001e36"/>
   <path id="Path_99545" data-name="Path 99545" d="M18.975,25.625H8.35a.269.269,0,0,1-.25-.25V8.25A.269.269,0,0,1,8.35,8H11.6l.25.125h0v14H19.6a.269.269,0,0,1,.25.25l-.625,3L19.1,25.5Z" transform="translate(2.025 1.942)" fill="#31a8ff"/>
@@ -460,7 +460,8 @@ function selectorTrayWithImgs(layer, data) {
   const hueSat = hueSatBtn(data);
   const uploadCTA = uploadButton(data);
   const continueCTA = createUploadPSButton(data);
-  console.log(continueCTA.innerText)
+  let productIcon = productIconLR;
+  if (continueCTA && continueCTA.innerText && continueCTA.innerText.toLowerCase().includes('photoshop')) productIcon = productIconPS;
   trayItems.append(productIcon, hueSat, uploadCTA, continueCTA);
   selectorTray.append(trayItems);
   return selectorTray;
