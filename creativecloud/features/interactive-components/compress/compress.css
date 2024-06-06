@@ -114,7 +114,8 @@
   .interactive-enabled .step-compress .panel .menu .uploadButtonMobile.hide {
     display: none;
   }
-  
+
+  .interactive-enabled .step-compress .panel .svg-icon-container svg,
   .interactive-enabled .step-compress .panel .svg-icon-container img {
     height: 18px;
     width: 18px;
@@ -141,9 +142,15 @@
     animation: spinner .6s linear infinite;
   }
 
-  .interactive-enabled .dark .sliderTray .uploadButton .svg-icon-container svg * {
+  .interactive-enabled .uploadButton .svg-icon-container svg *,
+  .interactive-enabled .dark .uploadButton .svg-icon-container svg * {
     fill: white;
     stroke: white;
+  }
+
+  .interactive-enabled .light .uploadButton .svg-icon-container svg * {
+    fill: black;
+    stroke: black;
   }
   
   @media screen and (min-width: 600px) {
@@ -211,6 +218,7 @@
      display: none;
    }
   
+    .interactive-enabled .step-compress .panel .svg-icon-container svg,
    .interactive-enabled .step-compress .panel .svg-icon-container img,
    .interactive-enabled .step-compress .continueButton .svg-icon-container img,
    .interactive-enabled .step-compress .downloadButton .svg-icon-container img{
