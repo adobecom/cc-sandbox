@@ -271,6 +271,7 @@ function getWorkFlowInformation(el) {
     'workflow-redirect': ['redirect'],
     'workflow-compress-pdf': ['compress'],
     'workflow-chat-pdf': ['chat-pdf'],
+    'workflow-changebg': ['changebg'],
   };
   const wfNames = Object.keys(intWorkFlowConfig);
   [...el.classList].forEach((cn) => { if (cn.match('workflow-')) wfName = cn; });
