@@ -29,16 +29,12 @@
   color: var(--prompt-text-color-light);
 }
 
-.interactive-enabled
-  .interactive-holder.dark.step-selector-tray-edits
-  .selector-tray {
+.interactive-enabled .interactive-holder.dark.step-selector-tray-edits .selector-tray {
   background: var(--prompt-input-fill);
   color: var(--color-white);
 }
 
-.interactive-enabled
-  .interactive-holder.light.step-selector-tray-edits
-  .selector-tray {
+.interactive-enabled .interactive-holder.light.step-selector-tray-edits .selector-tray {
   background: var(--prompt-btn-fill-light);
   color: var(--prompt-text-color-light);
 }
@@ -55,8 +51,7 @@
   justify-content: space-between;
 }
 
-.interactive-enabled
-  .step-selector-tray-edits
+.interactive-enabled .step-selector-tray-edits
   .selector-tray
   .tray-items
   a.tray-thumbnail-img {
