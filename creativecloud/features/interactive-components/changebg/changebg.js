@@ -255,6 +255,8 @@ function uploadButton(data) {
     };
     reader.readAsDataURL(file);
     data.target.querySelector('.continue').style.display = 'flex';
+    data.target.querySelector('.changebg-button').style.display = 'none';
+    data.target.querySelector('.removebg-button').style.display = 'flex';
   });
   return uploadCTA;
 }
@@ -294,6 +296,8 @@ export default async function stepInit(data) {
     linear-gradient(135deg, transparent 75%, #ccc 75%)`;
     data.target.style.backgroundSize = '25px 25px';
     data.target.style.backgroundPosition = '0 0, 12.5px 0, 12.5px -12.5px, 0px 12.5px';
+    data.target.querySelector('.removebg-button').style.display = 'flex';
+    data.target.querySelector('.changebg-button').style.display = 'none';
   });
   return layer;
 }
