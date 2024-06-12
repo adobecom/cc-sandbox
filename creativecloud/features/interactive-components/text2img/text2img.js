@@ -53,7 +53,7 @@ export default async function stepInit(data) {
     };
     const res = await fetch('https://assistant-int.adobe.io/api/v1/providers/Text2Image', options);
     const d = await res.json();
-    data.target.querySelector(':scope > picture img').src = d['images']['presignedUrl'];
+    data.target.querySelector(':scope > picture img').src = d['images'][0]['presignedUrl'];
     data.target.classList.remove('loading');
     circle.remove();
   });
