@@ -51,7 +51,7 @@ export default async function stepInit(data) {
       },
       body: payload,
     };
-    const res = await fetch('https://assistant-int.adobe.io/api/v1/providers/Text2Template', options);
+    const res = await fetch('https://assistant-int.adobe.io/api/v1/providers/Text2Image', options);
     const d = await res.json();
     data.target.querySelector(':scope > picture img').src = `data:image/jpeg;base64,${d['images'][0]['base64']}`;
     data.target.classList.remove('loading');
