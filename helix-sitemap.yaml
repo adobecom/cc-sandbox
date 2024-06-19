@@ -5,7 +5,6 @@ sitemaps:
     origin: https://www.adobe.com
     lastmod: YYYY-MM-DD
     default: en-US
-    extension: .html
     languages:
       us:
         source: /cc-shared/assets/query-index.json
