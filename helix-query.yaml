@@ -14,7 +14,7 @@ indices:
       - /ai/**
       - /education/**
       - /promo/**
-    target: /cc-shared/assets/query-index.xlsx
+    target: /cc-shared/assets/query-index.json
     properties:
       title:
         select: head > meta[property="og:title"]
@@ -67,7 +67,7 @@ indices:
       - /au/ai/**
       - /au/education/**
       - /au/promo/**
-    target: /au/cc-shared/assets/query-index.xlsx
+    target: /au/cc-shared/assets/query-index.json
   
   cards-au:
     <<: *merch-cards
@@ -83,7 +83,7 @@ indices:
       - /de/ai/**
       - /de/education/**
       - /de/promo/**
-    target: /de/cc-shared/assets/query-index.xlsx
+    target: /de/cc-shared/assets/query-index.json
   
   cards-de:
     <<: *merch-cards
@@ -99,7 +99,7 @@ indices:
       - /es/ai/**
       - /es/education/**
       - /es/promo/**
-    target: /es/cc-shared/assets/query-index.xlsx
+    target: /es/cc-shared/assets/query-index.json
 
   cards-es:
     <<: *merch-cards
@@ -115,7 +115,7 @@ indices:
       - /fr/ai/**
       - /fr/education/**
       - /fr/promo/**
-    target: /fr/cc-shared/assets/query-index.xlsx
+    target: /fr/cc-shared/assets/query-index.json
 
   cards-fr:
     <<: *merch-cards
@@ -131,7 +131,7 @@ indices:
       - /it/ai/**
       - /it/education/**
       - /it/promo/**
-    target: /it/cc-shared/assets/query-index.xlsx
+    target: /it/cc-shared/assets/query-index.json
   
   cards-it:
     <<: *merch-cards
@@ -147,7 +147,7 @@ indices:
       - /jp/ai/**
       - /jp/education/**
       - /jp/promo/**
-    target: /jp/cc-shared/assets/query-index.xlsx
+    target: /jp/cc-shared/assets/query-index.json
 
   cards-jp:
     <<: *merch-cards
@@ -163,7 +163,7 @@ indices:
       - /kr/ai/**
       - /kr/education/**
       - /kr/promo/**
-    target: /kr/cc-shared/assets/query-index.xlsx
+    target: /kr/cc-shared/assets/query-index.json
 
   cards-kr:
     <<: *merch-cards
@@ -179,7 +179,7 @@ indices:
       - /ru/ai/**
       - /ru/education/**
       - /ru/promo/**
-    target: /ru/cc-shared/assets/query-index.xlsx
+    target: /ru/cc-shared/assets/query-index.json
 
   cards-ru:
     <<: *merch-cards
@@ -195,7 +195,7 @@ indices:
       - /hk_zh/ai/**
       - /hk_zh/education/**
       - /hk_zh/promo/**
-    target: /hk_zh/cc-shared/assets/query-index.xlsx
+    target: /hk_zh/cc-shared/assets/query-index.json
 
   cards-hk_zh:
     <<: *merch-cards
@@ -211,7 +211,7 @@ indices:
       - /tw/ai/**
       - /tw/education/**
       - /tw/promo/**
-    target: /tw/cc-shared/assets/query-index.xlsx  
+    target: /tw/cc-shared/assets/query-index.json  
 
   cards-tw:
     <<: *merch-cards
@@ -227,7 +227,7 @@ indices:
       - /nl/ai/**
       - /nl/education/**
       - /nl/promo/**
-    target: /nl/cc-shared/assets/query-index.xlsx
+    target: /nl/cc-shared/assets/query-index.json
 
   cards-nl:
     <<: *merch-cards
@@ -243,7 +243,7 @@ indices:
       - /pl/ai/**
       - /pl/education/**
       - /pl/promo/**
-    target: /pl/cc-shared/assets/query-index.xlsx
+    target: /pl/cc-shared/assets/query-index.json
 
   cards-pl:
     <<: *merch-cards
@@ -259,7 +259,7 @@ indices:
       - /tr/ai/**
       - /tr/education/**
       - /tr/promo/**
-    target: /tr/cc-shared/assets/query-index.xlsx  
+    target: /tr/cc-shared/assets/query-index.json  
 
   cards-tr:
     <<: *merch-cards
@@ -275,7 +275,7 @@ indices:
       - /uk/ai/**
       - /uk/education/**
       - /uk/promo/**
-    target: /uk/cc-shared/assets/query-index.xlsx
+    target: /uk/cc-shared/assets/query-index.json
 
   cards-uk:
     <<: *merch-cards
@@ -291,7 +291,7 @@ indices:
       - /ca/ai/**
       - /ca/education/**
       - /ca/promo/**
-    target: /ca/cc-shared/assets/query-index.xlsx
+    target: /ca/cc-shared/assets/query-index.json
 
   cards-ca:
     <<: *merch-cards
@@ -307,7 +307,7 @@ indices:
       - /cn/ai/**
       - /cn/education/**
       - /cn/promo/**
-    target: /cn/cc-shared/assets/query-index.xlsx
+    target: /cn/cc-shared/assets/query-index.json
 
   cards-cn:
     <<: *merch-cards
@@ -323,7 +323,7 @@ indices:
       - /ae_ar/ai/**
       - /ae_ar/education/**
       - /ae_ar/promo/**
-    target: /ae_ar/cc-shared/assets/query-index.xlsx
+    target: /ae_ar/cc-shared/assets/query-index.json
 
   cards-ae_ar:
     <<: *merch-cards
@@ -339,7 +339,7 @@ indices:
       - /ae_en/ai/**
       - /ae_en/education/**
       - /ae_en/promo/**
-    target: /ae_en/cc-shared/assets/query-index.xlsx
+    target: /ae_en/cc-shared/assets/query-index.json
 
   cards-ae_en:
     <<: *merch-cards
@@ -355,7 +355,7 @@ indices:
       - /at/ai/**
       - /at/education/**
       - /at/promo/**
-    target: /at/cc-shared/assets/query-index.xlsx
+    target: /at/cc-shared/assets/query-index.json
 
   cards-at:
     <<: *merch-cards
@@ -371,7 +371,7 @@ indices:
       - /be_en/ai/**
       - /be_en/education/**
       - /be_en/promo/**
-    target: /be_en/cc-shared/assets/query-index.xlsx
+    target: /be_en/cc-shared/assets/query-index.json
 
   cards-be_en:
     <<: *merch-cards
@@ -387,7 +387,7 @@ indices:
       - /be_fr/ai/**
       - /be_fr/education/**
       - /be_fr/promo/**
-    target: /be_fr/cc-shared/assets/query-index.xlsx
+    target: /be_fr/cc-shared/assets/query-index.json
 
   cards-be_fr:
     <<: *merch-cards
@@ -403,7 +403,7 @@ indices:
       - /ca_fr/ai/**
       - /ca_fr/education/**
       - /ca_fr/promo/**
-    target: /ca_fr/cc-shared/assets/query-index.xlsx
+    target: /ca_fr/cc-shared/assets/query-index.json
 
   cards-ca_fr:
     <<: *merch-cards
@@ -419,7 +419,7 @@ indices:
       - /ch_de/ai/**
       - /ch_de/education/**
       - /ch_de/promo/**
-    target: /ch_de/cc-shared/assets/query-index.xlsx
+    target: /ch_de/cc-shared/assets/query-index.json
 
   cards-ch_de:
     <<: *merch-cards
@@ -435,7 +435,7 @@ indices:
       - /ch_fr/ai/**
       - /ch_fr/education/**
       - /ch_fr/promo/**
-    target: /ch_fr/cc-shared/assets/query-index.xlsx
+    target: /ch_fr/cc-shared/assets/query-index.json
 
   cards-ch_fr:
     <<: *merch-cards
@@ -451,7 +451,7 @@ indices:
       - /cl/ai/**
       - /cl/education/**
       - /cl/promo/**
-    target: /cl/cc-shared/assets/query-index.xlsx
+    target: /cl/cc-shared/assets/query-index.json
 
   cards-cl:
     <<: *merch-cards
@@ -467,7 +467,7 @@ indices:
       - /gr_en/ai/**
       - /gr_en/education/**
       - /gr_en/promo/**
-    target: /gr_en/cc-shared/assets/query-index.xlsx  
+    target: /gr_en/cc-shared/assets/query-index.json  
 
   cards-gr_en:
     <<: *merch-cards
@@ -483,7 +483,7 @@ indices:
       - /hk_en/ai/**
       - /hk_en/education/**
       - /hk_en/promo/**
-    target: /hk_en/cc-shared/assets/query-index.xlsx
+    target: /hk_en/cc-shared/assets/query-index.json
 
   cards-hk_en:
     <<: *merch-cards
@@ -499,7 +499,7 @@ indices:
       - /ie/ai/**
       - /ie/education/**
       - /ie/promo/**
-    target: /ie/cc-shared/assets/query-index.xlsx  
+    target: /ie/cc-shared/assets/query-index.json  
 
   cards-ie:
     <<: *merch-cards
@@ -515,7 +515,7 @@ indices:
       - /il_en/ai/**
       - /il_en/education/**
       - /il_en/promo/**
-    target: /il_en/cc-shared/assets/query-index.xlsx
+    target: /il_en/cc-shared/assets/query-index.json
 
   cards-il_en:
     <<: *merch-cards
@@ -531,7 +531,7 @@ indices:
       - /in/ai/**
       - /in/education/**
       - /in/promo/**
-    target: /in/cc-shared/assets/query-index.xlsx
+    target: /in/cc-shared/assets/query-index.json
 
   cards-in:
     <<: *merch-cards
@@ -547,7 +547,7 @@ indices:
       - /lt/ai/**
       - /lt/education/**
       - /lt/promo/**
-    target: /lt/cc-shared/assets/query-index.xlsx
+    target: /lt/cc-shared/assets/query-index.json
 
   cards-lt:
     <<: *merch-cards
@@ -563,7 +563,7 @@ indices:
       - /lu_de/ai/**
       - /lu_de/education/**
       - /lu_de/promo/**
-    target: /lu_de/cc-shared/assets/query-index.xlsx
+    target: /lu_de/cc-shared/assets/query-index.json
 
   cards-lu_de:
     <<: *merch-cards
@@ -579,7 +579,7 @@ indices:
       - /lu_en/ai/**
       - /lu_en/education/**
       - /lu_en/promo/**
-    target: /lu_en/cc-shared/assets/query-index.xlsx
+    target: /lu_en/cc-shared/assets/query-index.json
 
   cards-lu_en:
     <<: *merch-cards
@@ -595,7 +595,7 @@ indices:
       - /lu_fr/ai/**
       - /lu_fr/education/**
       - /lu_fr/promo/**
-    target: /lu_fr/cc-shared/assets/query-index.xlsx
+    target: /lu_fr/cc-shared/assets/query-index.json
 
   cards-lu_fr:
     <<: *merch-cards
@@ -611,7 +611,7 @@ indices:
       - /mena_en/ai/**
       - /mena_en/education/**
       - /mena_en/promo/**
-    target: /mena_en/cc-shared/assets/query-index.xlsx
+    target: /mena_en/cc-shared/assets/query-index.json
 
   cards-mena_en:
     <<: *merch-cards
@@ -627,7 +627,7 @@ indices:
       - /nz/ai/**
       - /nz/education/**
       - /nz/promo/**
-    target: /nz/cc-shared/assets/query-index.xlsx
+    target: /nz/cc-shared/assets/query-index.json
 
   cards-nz:
     <<: *merch-cards
@@ -643,7 +643,7 @@ indices:
       - /sa_ar/ai/**
       - /sa_ar/education/**
       - /sa_ar/promo/**
-    target: /sa_ar/cc-shared/assets/query-index.xlsx  
+    target: /sa_ar/cc-shared/assets/query-index.json  
 
   cards-sa_ar:
     <<: *merch-cards
@@ -659,7 +659,7 @@ indices:
       - /sa_en/ai/**
       - /sa_en/education/**
       - /sa_en/promo/**
-    target: /sa_en/cc-shared/assets/query-index.xlsx
+    target: /sa_en/cc-shared/assets/query-index.json
 
    cards-sa_en:
     <<: *merch-cards
@@ -675,7 +675,7 @@ indices:
       - /th_en/ai/**
       - /th_en/education/**
       - /th_en/promo/**
-    target: /th_en/cc-shared/assets/query-index.xlsx
+    target: /th_en/cc-shared/assets/query-index.json
 
   cards-th_en:
     <<: *merch-cards
@@ -691,7 +691,7 @@ indices:
       - /th_th/ai/**
       - /th_th/education/**
       - /th_th/promo/**
-    target: /th_th/cc-shared/assets/query-index.xlsx
+    target: /th_th/cc-shared/assets/query-index.json
 
   cards-th_th:
     <<: *merch-cards
@@ -707,7 +707,7 @@ indices:
       - /za/ai/**
       - /za/education/**
       - /za/promo/**
-    target: /za/cc-shared/assets/query-index.xlsx
+    target: /za/cc-shared/assets/query-index.json
 
   cards-za:
     <<: *merch-cards
@@ -723,7 +723,7 @@ indices:
       - /africa/ai/**
       - /africa/education/**
       - /africa/promo/**
-    target: /africa/cc-shared/assets/query-index.xlsx
+    target: /africa/cc-shared/assets/query-index.json
 
   cards-africa:
     <<: *merch-cards
@@ -739,7 +739,7 @@ indices:
       - /ar/ai/**
       - /ar/education/**
       - /ar/promo/**
-    target: /ar/cc-shared/assets/query-index.xlsx
+    target: /ar/cc-shared/assets/query-index.json
 
   cards-ar:
     <<: *merch-cards
@@ -755,7 +755,7 @@ indices:
       - /co/ai/**
       - /co/education/**
       - /co/promo/**
-    target: /co/cc-shared/assets/query-index.xlsx
+    target: /co/cc-shared/assets/query-index.json
 
   cards-co:
     <<: *merch-cards
@@ -771,7 +771,7 @@ indices:
       - /cr/ai/**
       - /cr/education/**
       - /cr/promo/**
-    target: /cr/cc-shared/assets/query-index.xlsx
+    target: /cr/cc-shared/assets/query-index.json
 
   cards-cr:
     <<: *merch-cards
@@ -787,7 +787,7 @@ indices:
       - /ec/ai/**
       - /ec/education/**
       - /ec/promo/**
-    target: /ec/cc-shared/assets/query-index.xlsx
+    target: /ec/cc-shared/assets/query-index.json
 
   cards-ec:
     <<: *merch-cards
@@ -803,7 +803,7 @@ indices:
       - /eg_ar/ai/**
       - /eg_ar/education/**
       - /eg_ar/promo/**
-    target: /eg_ar/cc-shared/assets/query-index.xlsx
+    target: /eg_ar/cc-shared/assets/query-index.json
 
   cards-eg_ar:
     <<: *merch-cards
@@ -819,7 +819,7 @@ indices:
       - /eg_en/ai/**
       - /eg_en/education/**
       - /eg_en/promo/**
-    target: /eg_en/cc-shared/assets/query-index.xlsx
+    target: /eg_en/cc-shared/assets/query-index.json
 
   cards-eg_en:
     <<: *merch-cards
@@ -835,7 +835,7 @@ indices:
       - /gr_el/ai/**
       - /gr_el/education/**
       - /gr_el/promo/**
-    target: /gr_el/cc-shared/assets/query-index.xlsx
+    target: /gr_el/cc-shared/assets/query-index.json
 
   cards-gr_el:
     <<: *merch-cards
@@ -851,7 +851,7 @@ indices:
       - /gt/ai/**
       - /gt/education/**
       - /gt/promo/**
-    target: /gt/cc-shared/assets/query-index.xlsx
+    target: /gt/cc-shared/assets/query-index.json
 
   cards-gt:
     <<: *merch-cards
@@ -867,7 +867,7 @@ indices:
       - /id_en/ai/**
       - /id_en/education/**
       - /id_en/promo/**
-    target: /id_en/cc-shared/assets/query-index.xlsx
+    target: /id_en/cc-shared/assets/query-index.json
 
   cards-id_en:
     <<: *merch-cards
@@ -883,7 +883,7 @@ indices:
       - /id_id/ai/**
       - /id_id/education/**
       - /id_id/promo/**
-    target: /id_id/cc-shared/assets/query-index.xlsx
+    target: /id_id/cc-shared/assets/query-index.json
 
   cards-id_id:
     <<: *merch-cards
@@ -899,7 +899,7 @@ indices:
       - /in_hi/ai/**
       - /in_hi/education/**
       - /in_hi/promo/**
-    target: /in_hi/cc-shared/assets/query-index.xlsx
+    target: /in_hi/cc-shared/assets/query-index.json
 
   cards-in_hi:
     <<: *merch-cards
@@ -915,7 +915,7 @@ indices:
       - /kw_ar/ai/**
       - /kw_ar/education/**
       - /kw_ar/promo/**
-    target: /kw_ar/cc-shared/assets/query-index.xlsx
+    target: /kw_ar/cc-shared/assets/query-index.json
 
   cards-kw_ar:
     <<: *merch-cards
@@ -931,7 +931,7 @@ indices:
       - /kw_en/ai/**
       - /kw_en/education/**
       - /kw_en/promo/**
-    target: /kw_en/cc-shared/assets/query-index.xlsx
+    target: /kw_en/cc-shared/assets/query-index.json
 
   cards-kw_en:
     <<: *merch-cards
@@ -947,7 +947,7 @@ indices:
       - /my_en/ai/**
       - /my_en/education/**
       - /my_en/promo/**
-    target: /my_en/cc-shared/assets/query-index.xlsx
+    target: /my_en/cc-shared/assets/query-index.json
 
   cards-my_en:
     <<: *merch-cards
@@ -963,7 +963,7 @@ indices:
       - /my_ms/ai/**
       - /my_ms/education/**
       - /my_ms/promo/**
-    target: /my_ms/cc-shared/assets/query-index.xlsx
+    target: /my_ms/cc-shared/assets/query-index.json
 
   cards-my_ms:
     <<: *merch-cards
@@ -979,7 +979,7 @@ indices:
       - /ng/ai/**
       - /ng/education/**
       - /ng/promo/**
-    target: /ng/cc-shared/assets/query-index.xlsx  
+    target: /ng/cc-shared/assets/query-index.json  
 
   cards-ng:
     <<: *merch-cards
@@ -995,7 +995,7 @@ indices:
       - /pe/ai/**
       - /pe/education/**
       - /pe/promo/**
-    target: /pe/cc-shared/assets/query-index.xlsx  
+    target: /pe/cc-shared/assets/query-index.json  
 
   cards-pe:
     <<: *merch-cards
@@ -1011,7 +1011,7 @@ indices:
       - /ph_en/ai/**
       - /ph_en/education/**
       - /ph_en/promo/**
-    target: /ph_en/cc-shared/assets/query-index.xlsx
+    target: /ph_en/cc-shared/assets/query-index.json
 
   cards-ph_en:
     <<: *merch-cards
@@ -1027,7 +1027,7 @@ indices:
       - /ph_fil/ai/**
       - /ph_fil/education/**
       - /ph_fil/promo/**
-    target: /ph_fil/cc-shared/assets/query-index.xlsx
+    target: /ph_fil/cc-shared/assets/query-index.json
 
   cards-ph_fil:
     <<: *merch-cards
@@ -1043,7 +1043,7 @@ indices:
       - /pr/ai/**
       - /pr/education/**
       - /pr/promo/**
-    target: /pr/cc-shared/assets/query-index.xlsx  
+    target: /pr/cc-shared/assets/query-index.json  
 
   cards-pr:
     <<: *merch-cards
@@ -1059,7 +1059,7 @@ indices:
       - /qa_ar/ai/**
       - /qa_ar/education/**
       - /qa_ar/promo/**
-    target: /qa_ar/cc-shared/assets/query-index.xlsx
+    target: /qa_ar/cc-shared/assets/query-index.json
 
   cards-qa_ar:
     <<: *merch-cards
@@ -1075,7 +1075,7 @@ indices:
       - /qa_en/ai/**
       - /qa_en/education/**
       - /qa_en/promo/**
-    target: /qa_en/cc-shared/assets/query-index.xlsx
+    target: /qa_en/cc-shared/assets/query-index.json
 
   cards-qa_en:
     <<: *merch-cards
@@ -1091,7 +1091,7 @@ indices:
       - /vn_en/ai/**
       - /vn_en/education/**
       - /vn_en/promo/**
-    target: /vn_en/cc-shared/assets/query-index.xlsx
+    target: /vn_en/cc-shared/assets/query-index.json
 
   cards-vn_en:
     <<: *merch-cards
@@ -1107,7 +1107,7 @@ indices:
       - /vn_vi/ai/**
       - /vn_vi/education/**
       - /vn_vi/promo/**
-    target: /vn_vi/cc-shared/assets/query-index.xlsx 
+    target: /vn_vi/cc-shared/assets/query-index.json 
 
   cards-vn_vi:
     <<: *merch-cards
@@ -1123,7 +1123,7 @@ indices:
       - /dk/ai/**
       - /dk/education/**
       - /dk/promo/**
-    target: /dk/cc-shared/assets/query-index.xlsx
+    target: /dk/cc-shared/assets/query-index.json
 
   cards-dk:
     <<: *merch-cards
@@ -1139,7 +1139,7 @@ indices:
       - /fi/ai/**
       - /fi/education/**
       - /fi/promo/**
-    target: /fi/cc-shared/assets/query-index.xlsx
+    target: /fi/cc-shared/assets/query-index.json
 
   cards-fi:
     <<: *merch-cards
@@ -1155,7 +1155,7 @@ indices:
       - /no/ai/**
       - /no/education/**
       - /no/promo/**
-    target: /no/cc-shared/assets/query-index.xlsx
+    target: /no/cc-shared/assets/query-index.json
 
   cards-no:
     <<: *merch-cards
@@ -1171,7 +1171,7 @@ indices:
       - /se/ai/**
       - /se/education/**
       - /se/promo/**
-    target: /se/cc-shared/assets/query-index.xlsx
+    target: /se/cc-shared/assets/query-index.json
 
   cards-se:
     <<: *merch-cards
@@ -1187,7 +1187,7 @@ indices:
       - /la/ai/**
       - /la/education/**
       - /la/promo/**
-    target: /la/cc-shared/assets/query-index.xlsx
+    target: /la/cc-shared/assets/query-index.json
 
   cards-la:
     <<: *merch-cards
@@ -1203,7 +1203,7 @@ indices:
       - /mx/ai/**
       - /mx/education/**
       - /mx/promo/**
-    target: /mx/cc-shared/assets/query-index.xlsx
+    target: /mx/cc-shared/assets/query-index.json
 
   cards-mx:
     <<: *merch-cards
@@ -1219,7 +1219,7 @@ indices:
       - /be_nl/ai/**
       - /be_nl/education/**
       - /be_nl/promo/**
-    target: /be_nl/cc-shared/assets/query-index.xlsx
+    target: /be_nl/cc-shared/assets/query-index.json
 
   cards-be_nl:
     <<: *merch-cards
@@ -1235,7 +1235,7 @@ indices:
       - /bg/ai/**
       - /bg/education/**
       - /bg/promo/**
-    target: /bg/cc-shared/assets/query-index.xlsx
+    target: /bg/cc-shared/assets/query-index.json
 
   cards-bg:
     <<: *merch-cards
@@ -1251,7 +1251,7 @@ indices:
       - /ch_it/ai/**
       - /ch_it/education/**
       - /ch_it/promo/**
-    target: /ch_it/cc-shared/assets/query-index.xlsx
+    target: /ch_it/cc-shared/assets/query-index.json
 
   cards-ch_it:
     <<: *merch-cards
@@ -1267,7 +1267,7 @@ indices:
       - /cz/ai/**
       - /cz/education/**
       - /cz/promo/**
-    target: /cz/cc-shared/assets/query-index.xlsx
+    target: /cz/cc-shared/assets/query-index.json
 
   cards-cz:
     <<: *merch-cards
@@ -1283,7 +1283,7 @@ indices:
       - /ee/ai/**
       - /ee/education/**
       - /ee/promo/**
-    target: /ee/cc-shared/assets/query-index.xlsx
+    target: /ee/cc-shared/assets/query-index.json
 
   cards-ee:
     <<: *merch-cards
@@ -1299,7 +1299,7 @@ indices:
       - /hu/ai/**
       - /hu/education/**
       - /hu/promo/**
-    target: /hu/cc-shared/assets/query-index.xlsx
+    target: /hu/cc-shared/assets/query-index.json
 
   cards-hu:
     <<: *merch-cards
@@ -1315,7 +1315,7 @@ indices:
       - /il_he/ai/**
       - /il_he/education/**
       - /il_he/promo/**
-    target: /il_he/cc-shared/assets/query-index.xlsx
+    target: /il_he/cc-shared/assets/query-index.json
 
   cards-il_he:
     <<: *merch-cards
@@ -1331,7 +1331,7 @@ indices:
       - /lv/ai/**
       - /lv/education/**
       - /lv/promo/**
-    target: /lv/cc-shared/assets/query-index.xlsx
+    target: /lv/cc-shared/assets/query-index.json
 
   cards-lv:
     <<: *merch-cards
@@ -1347,7 +1347,7 @@ indices:
       - /mena_ar/ai/**
       - /mena_ar/education/**
       - /mena_ar/promo/**
-    target: /mena_ar/cc-shared/assets/query-index.xlsx
+    target: /mena_ar/cc-shared/assets/query-index.json
 
   cards-mena_ar:
     <<: *merch-cards
@@ -1363,7 +1363,7 @@ indices:
       - /pt/ai/**
       - /pt/education/**
       - /pt/promo/**
-    target: /pt/cc-shared/assets/query-index.xlsx
+    target: /pt/cc-shared/assets/query-index.json
 
   cards-pt:
     <<: *merch-cards
@@ -1379,7 +1379,7 @@ indices:
       - /ro/ai/**
       - /ro/education/**
       - /ro/promo/**
-    target: /ro/cc-shared/assets/query-index.xlsx
+    target: /ro/cc-shared/assets/query-index.json
 
   cards-ro:
     <<: *merch-cards
@@ -1395,7 +1395,7 @@ indices:
       - /si/ai/**
       - /si/education/**
       - /si/promo/**
-    target: /si/cc-shared/assets/query-index.xlsx
+    target: /si/cc-shared/assets/query-index.json
 
   cards-si:
     <<: *merch-cards
@@ -1411,7 +1411,7 @@ indices:
       - /sk/ai/**
       - /sk/education/**
       - /sk/promo/**
-    target: /sk/cc-shared/assets/query-index.xlsx
+    target: /sk/cc-shared/assets/query-index.json
 
   cards-sk:
     <<: *merch-cards
@@ -1427,7 +1427,7 @@ indices:
       - /ua/ai/**
       - /ua/education/**
       - /ua/promo/**
-    target: /ua/cc-shared/assets/query-index.xlsx
+    target: /ua/cc-shared/assets/query-index.json
 
   cards-ua:
     <<: *merch-cards
@@ -1443,7 +1443,7 @@ indices:
       - /sg/ai/**
       - /sg/education/**
       - /sg/promo/**
-    target: /sg/cc-shared/assets/query-index.xlsx
+    target: /sg/cc-shared/assets/query-index.json
 
   cards-sg:
     <<: *merch-cards
@@ -1459,7 +1459,7 @@ indices:
       - /br/ai/**
       - /br/education/**
       - /br/promo/**
-    target: /br/cc-shared/assets/query-index.xlsx    
+    target: /br/cc-shared/assets/query-index.json    
 
   cards-br:
     <<: *merch-cards
@@ -1475,7 +1475,7 @@ indices:
       - /cis_en/ai/**
       - /cis_en/education/**
       - /cis_en/promo/**
-    target: /cis_en/cc-shared/assets/query-index.xlsx    
+    target: /cis_en/cc-shared/assets/query-index.json    
 
   cards-cis_en:
     <<: *merch-cards
@@ -1491,7 +1491,7 @@ indices:
       - /cis_ru/ai/**
       - /cis_ru/education/**
       - /cis_ru/promo/**
-    target: /cis_ru/cc-shared/assets/query-index.xlsx    
+    target: /cis_ru/cc-shared/assets/query-index.json    
 
   cards-cis_ru:
     <<: *merch-cards
