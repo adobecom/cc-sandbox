@@ -38,7 +38,7 @@ indices:
   merch-cards: &merch-cards
     include:
       - /cc-shared/fragments/merch/**/merch-card/**
-    target: /cc-shared/assets/query-index-cards.xslx
+    target: /cc-shared/assets/query-index-cards.json
     properties:
       lastModified:
         select: none
@@ -73,7 +73,7 @@ indices:
     <<: *merch-cards
     include:
       - /au/cc-shared/fragments/merch/**/merch-card/**
-    target: /au/cc-shared/assets/query-index-cards.xslx    
+    target: /au/cc-shared/assets/query-index-cards.json    
 
   creativecloud-de:
     <<: *def
@@ -89,7 +89,7 @@ indices:
     <<: *merch-cards
     include:
       - /de/cc-shared/fragments/merch/**/merch-card/**
-    target: /de/cc-shared/assets/query-index-cards.xslx    
+    target: /de/cc-shared/assets/query-index-cards.json    
     
   creativecloud-es:
     <<: *def
@@ -105,7 +105,7 @@ indices:
     <<: *merch-cards
     include:
       - /es/cc-shared/fragments/merch/**/merch-card/**
-    target: /es/cc-shared/assets/query-index-cards.xslx
+    target: /es/cc-shared/assets/query-index-cards.json
 
   creativecloud-fr:
     <<: *def
@@ -121,7 +121,7 @@ indices:
     <<: *merch-cards
     include:
       - /fr/cc-shared/fragments/merch/**/merch-card/**
-    target: /fr/cc-shared/assets/query-index-cards.xslx    
+    target: /fr/cc-shared/assets/query-index-cards.json    
 
   creativecloud-it:
     <<: *def
@@ -137,7 +137,7 @@ indices:
     <<: *merch-cards
     include:
       - /it/cc-shared/fragments/merch/**/merch-card/**
-    target: /it/cc-shared/assets/query-index-cards.xslx
+    target: /it/cc-shared/assets/query-index-cards.json
 
   creativecloud-jp:
     <<: *def
@@ -153,7 +153,7 @@ indices:
     <<: *merch-cards
     include:
       - /jp/cc-shared/fragments/merch/**/merch-card/**
-    target: /jp/cc-shared/assets/query-index-cards.xslx
+    target: /jp/cc-shared/assets/query-index-cards.json
 
   creativecloud-kr:
     <<: *def
@@ -169,7 +169,7 @@ indices:
     <<: *merch-cards
     include:
       - /kr/cc-shared/fragments/merch/**/merch-card/**
-    target: /kr/cc-shared/assets/query-index-cards.xslx
+    target: /kr/cc-shared/assets/query-index-cards.json
 
   creativecloud-ru:
     <<: *def
@@ -185,7 +185,7 @@ indices:
     <<: *merch-cards
     include:
       - /ru/cc-shared/fragments/merch/**/merch-card/**
-    target: /ru/cc-shared/assets/query-index-cards.xslx
+    target: /ru/cc-shared/assets/query-index-cards.json
 
   creativecloud-hk_zh:
     <<: *def
@@ -201,7 +201,7 @@ indices:
     <<: *merch-cards
     include:
       - /hk_zh/cc-shared/fragments/merch/**/merch-card/**
-    target: /hk_zh/cc-shared/assets/query-index-cards.xslx
+    target: /hk_zh/cc-shared/assets/query-index-cards.json
 
   creativecloud-tw:
     <<: *def
@@ -217,7 +217,7 @@ indices:
     <<: *merch-cards
     include:
       - /tw/cc-shared/fragments/merch/**/merch-card/**
-    target: /tw/cc-shared/assets/query-index-cards.xslx
+    target: /tw/cc-shared/assets/query-index-cards.json
 
   creativecloud-nl:
     <<: *def
@@ -233,7 +233,7 @@ indices:
     <<: *merch-cards
     include:
       - /nl/cc-shared/fragments/merch/**/merch-card/**
-    target: /nl/cc-shared/assets/query-index-cards.xslx
+    target: /nl/cc-shared/assets/query-index-cards.json
 
   creativecloud-pl:
     <<: *def
@@ -249,7 +249,7 @@ indices:
     <<: *merch-cards
     include:
       - /pl/cc-shared/fragments/merch/**/merch-card/**
-    target: /pl/cc-shared/assets/query-index-cards.xslx
+    target: /pl/cc-shared/assets/query-index-cards.json
 
   creativecloud-tr:
     <<: *def
@@ -265,7 +265,7 @@ indices:
     <<: *merch-cards
     include:
       - /tr/cc-shared/fragments/merch/**/merch-card/**
-    target: /tr/cc-shared/assets/query-index-cards.xslx
+    target: /tr/cc-shared/assets/query-index-cards.json
 
   creativecloud-uk:
     <<: *def
@@ -281,7 +281,7 @@ indices:
     <<: *merch-cards
     include:
       - /uk/cc-shared/fragments/merch/**/merch-card/**
-    target: /uk/cc-shared/assets/query-index-cards.xslx
+    target: /uk/cc-shared/assets/query-index-cards.json
 
   creativecloud-ca:
     <<: *def
@@ -297,7 +297,7 @@ indices:
     <<: *merch-cards
     include:
       - /ca/cc-shared/fragments/merch/**/merch-card/**
-    target: /ca/cc-shared/assets/query-index-cards.xslx
+    target: /ca/cc-shared/assets/query-index-cards.json
 
   creativecloud-cn:
     <<: *def
@@ -313,7 +313,7 @@ indices:
     <<: *merch-cards
     include:
       - /cn/cc-shared/fragments/merch/**/merch-card/**
-    target: /cn/cc-shared/assets/query-index-cards.xslx
+    target: /cn/cc-shared/assets/query-index-cards.json
 
   creativecloud-ae_ar:
     <<: *def
@@ -329,7 +329,7 @@ indices:
     <<: *merch-cards
     include:
       - /ae_ar/cc-shared/fragments/merch/**/merch-card/**
-    target: /ae_ar/cc-shared/assets/query-index-cards.xslx
+    target: /ae_ar/cc-shared/assets/query-index-cards.json
 
   creativecloud-ae_en:
     <<: *def
@@ -345,7 +345,7 @@ indices:
     <<: *merch-cards
     include:
       - /ae_en/cc-shared/fragments/merch/**/merch-card/**
-    target: /ae_en/cc-shared/assets/query-index-cards.xslx
+    target: /ae_en/cc-shared/assets/query-index-cards.json
 
   creativecloud-at:
     <<: *def
@@ -361,7 +361,7 @@ indices:
     <<: *merch-cards
     include:
       - /at/cc-shared/fragments/merch/**/merch-card/**
-    target: /at/cc-shared/assets/query-index-cards.xslx
+    target: /at/cc-shared/assets/query-index-cards.json
 
   creativecloud-be_en:
     <<: *def
@@ -377,7 +377,7 @@ indices:
     <<: *merch-cards
     include:
       - /be_en/cc-shared/fragments/merch/**/merch-card/**
-    target: /be_en/cc-shared/assets/query-index-cards.xslx
+    target: /be_en/cc-shared/assets/query-index-cards.json
 
   creativecloud-be_fr:
     <<: *def
@@ -393,7 +393,7 @@ indices:
     <<: *merch-cards
     include:
       - /be_fr/cc-shared/fragments/merch/**/merch-card/**
-    target: /be_fr/cc-shared/assets/query-index-cards.xslx
+    target: /be_fr/cc-shared/assets/query-index-cards.json
 
   creativecloud-ca_fr:
     <<: *def
@@ -409,7 +409,7 @@ indices:
     <<: *merch-cards
     include:
       - /ca_fr/cc-shared/fragments/merch/**/merch-card/**
-    target: /ca_fr/cc-shared/assets/query-index-cards.xslx
+    target: /ca_fr/cc-shared/assets/query-index-cards.json
     
   creativecloud-ch_de:
     <<: *def
@@ -425,7 +425,7 @@ indices:
     <<: *merch-cards
     include:
       - /ch_de/cc-shared/fragments/merch/**/merch-card/**
-    target: /ch_de/cc-shared/assets/query-index-cards.xslx
+    target: /ch_de/cc-shared/assets/query-index-cards.json
 
   creativecloud-ch_fr:
     <<: *def
@@ -441,7 +441,7 @@ indices:
     <<: *merch-cards
     include:
       - /ch_fr/cc-shared/fragments/merch/**/merch-card/**
-    target: /ch_fr/cc-shared/assets/query-index-cards.xslx
+    target: /ch_fr/cc-shared/assets/query-index-cards.json
 
   creativecloud-cl:
     <<: *def
@@ -457,7 +457,7 @@ indices:
     <<: *merch-cards
     include:
       - /cl/cc-shared/fragments/merch/**/merch-card/**
-    target: /cl/cc-shared/assets/query-index-cards.xslx
+    target: /cl/cc-shared/assets/query-index-cards.json
 
   creativecloud-gr_en:
     <<: *def
@@ -473,7 +473,7 @@ indices:
     <<: *merch-cards
     include:
       - /gr_en/cc-shared/fragments/merch/**/merch-card/**
-    target: /gr_en/cc-shared/assets/query-index-cards.xslx
+    target: /gr_en/cc-shared/assets/query-index-cards.json
 
   creativecloud-hk_en:
     <<: *def
@@ -489,7 +489,7 @@ indices:
     <<: *merch-cards
     include:
       - /hk_en/cc-shared/fragments/merch/**/merch-card/**
-    target: /hk_en/cc-shared/assets/query-index-cards.xslx
+    target: /hk_en/cc-shared/assets/query-index-cards.json
 
   creativecloud-ie:
     <<: *def
@@ -505,7 +505,7 @@ indices:
     <<: *merch-cards
     include:
       - /ie/cc-shared/fragments/merch/**/merch-card/**
-    target: /ie/cc-shared/assets/query-index-cards.xslx
+    target: /ie/cc-shared/assets/query-index-cards.json
 
   creativecloud-il_en:
     <<: *def
@@ -521,7 +521,7 @@ indices:
     <<: *merch-cards
     include:
       - /il_en/cc-shared/fragments/merch/**/merch-card/**
-    target: /il_en/cc-shared/assets/query-index-cards.xslx
+    target: /il_en/cc-shared/assets/query-index-cards.json
 
   creativecloud-in:
     <<: *def
@@ -537,7 +537,7 @@ indices:
     <<: *merch-cards
     include:
       - /in/cc-shared/fragments/merch/**/merch-card/**
-    target: /in/cc-shared/assets/query-index-cards.xslx
+    target: /in/cc-shared/assets/query-index-cards.json
 
   creativecloud-lt:
     <<: *def
@@ -553,7 +553,7 @@ indices:
     <<: *merch-cards
     include:
       - /lt/cc-shared/fragments/merch/**/merch-card/**
-    target: /lt/cc-shared/assets/query-index-cards.xslx
+    target: /lt/cc-shared/assets/query-index-cards.json
 
   creativecloud-lu_de:
     <<: *def
@@ -569,7 +569,7 @@ indices:
     <<: *merch-cards
     include:
       - /lu_de/cc-shared/fragments/merch/**/merch-card/**
-    target: /lu_de/cc-shared/assets/query-index-cards.xslx
+    target: /lu_de/cc-shared/assets/query-index-cards.json
 
   creativecloud-lu_en:
     <<: *def
@@ -585,7 +585,7 @@ indices:
     <<: *merch-cards
     include:
       - /lu_en/cc-shared/fragments/merch/**/merch-card/**
-    target: /lu_en/cc-shared/assets/query-index-cards.xslx
+    target: /lu_en/cc-shared/assets/query-index-cards.json
 
   creativecloud-lu_fr:
     <<: *def
@@ -601,7 +601,7 @@ indices:
     <<: *merch-cards
     include:
       - /lu_fr/cc-shared/fragments/merch/**/merch-card/**
-    target: /lu_fr/cc-shared/assets/query-index-cards.xslx
+    target: /lu_fr/cc-shared/assets/query-index-cards.json
 
   creativecloud-mena_en:
     <<: *def
@@ -617,7 +617,7 @@ indices:
     <<: *merch-cards
     include:
       - /mena_en/cc-shared/fragments/merch/**/merch-card/**
-    target: /mena_en/cc-shared/assets/query-index-cards.xslx
+    target: /mena_en/cc-shared/assets/query-index-cards.json
 
   creativecloud-nz:
     <<: *def
@@ -633,7 +633,7 @@ indices:
     <<: *merch-cards
     include:
       - /nz/cc-shared/fragments/merch/**/merch-card/**
-    target: /nz/cc-shared/assets/query-index-cards.xslx
+    target: /nz/cc-shared/assets/query-index-cards.json
 
   creativecloud-sa_ar:
     <<: *def
@@ -649,7 +649,7 @@ indices:
     <<: *merch-cards
     include:
       - /sa_ar/cc-shared/fragments/merch/**/merch-card/**
-    target: /sa_ar/cc-shared/assets/query-index-cards.xslx
+    target: /sa_ar/cc-shared/assets/query-index-cards.json
 
   creativecloud-sa_en:
     <<: *def
@@ -665,7 +665,7 @@ indices:
     <<: *merch-cards
     include:
       - /sa_en/cc-shared/fragments/merch/**/merch-card/**
-    target: /sa_en/cc-shared/assets/query-index-cards.xslx
+    target: /sa_en/cc-shared/assets/query-index-cards.json
 
   creativecloud-th_en:
     <<: *def
@@ -681,7 +681,7 @@ indices:
     <<: *merch-cards
     include:
       - /th_en/cc-shared/fragments/merch/**/merch-card/**
-    target: /th_en/cc-shared/assets/query-index-cards.xslx
+    target: /th_en/cc-shared/assets/query-index-cards.json
 
   creativecloud-th_th:
     <<: *def
@@ -697,7 +697,7 @@ indices:
     <<: *merch-cards
     include:
       - /th_th/cc-shared/fragments/merch/**/merch-card/**
-    target: /th_th/cc-shared/assets/query-index-cards.xslx
+    target: /th_th/cc-shared/assets/query-index-cards.json
 
   creativecloud-za:
     <<: *def
@@ -713,7 +713,7 @@ indices:
     <<: *merch-cards
     include:
       - /za/cc-shared/fragments/merch/**/merch-card/**
-    target: /za/cc-shared/assets/query-index-cards.xslx
+    target: /za/cc-shared/assets/query-index-cards.json
 
   creativecloud-africa:
     <<: *def
@@ -729,7 +729,7 @@ indices:
     <<: *merch-cards
     include:
       - /africa/cc-shared/fragments/merch/**/merch-card/**
-    target: /africa/cc-shared/assets/query-index-cards.xslx
+    target: /africa/cc-shared/assets/query-index-cards.json
 
   creativecloud-ar:
     <<: *def
@@ -745,7 +745,7 @@ indices:
     <<: *merch-cards
     include:
       - /ar/cc-shared/fragments/merch/**/merch-card/**
-    target: /ar/cc-shared/assets/query-index-cards.xslx
+    target: /ar/cc-shared/assets/query-index-cards.json
 
   creativecloud-co:
     <<: *def
@@ -761,7 +761,7 @@ indices:
     <<: *merch-cards
     include:
       - /co/cc-shared/fragments/merch/**/merch-card/**
-    target: /co/cc-shared/assets/query-index-cards.xslx
+    target: /co/cc-shared/assets/query-index-cards.json
 
   creativecloud-cr:
     <<: *def
@@ -777,7 +777,7 @@ indices:
     <<: *merch-cards
     include:
       - /cr/cc-shared/fragments/merch/**/merch-card/**
-    target: /cr/cc-shared/assets/query-index-cards.xslx
+    target: /cr/cc-shared/assets/query-index-cards.json
 
   creativecloud-ec:
     <<: *def
@@ -793,7 +793,7 @@ indices:
     <<: *merch-cards
     include:
       - /ec/cc-shared/fragments/merch/**/merch-card/**
-    target: /ec/cc-shared/assets/query-index-cards.xslx
+    target: /ec/cc-shared/assets/query-index-cards.json
 
   creativecloud-eg_ar:
     <<: *def
@@ -809,7 +809,7 @@ indices:
     <<: *merch-cards
     include:
       - /eg_ar/cc-shared/fragments/merch/**/merch-card/**
-    target: /eg_ar/cc-shared/assets/query-index-cards.xslx
+    target: /eg_ar/cc-shared/assets/query-index-cards.json
 
   creativecloud-eg_en:
     <<: *def
@@ -825,7 +825,7 @@ indices:
     <<: *merch-cards
     include:
       - /eg_en/cc-shared/fragments/merch/**/merch-card/**
-    target: /eg_en/cc-shared/assets/query-index-cards.xslx
+    target: /eg_en/cc-shared/assets/query-index-cards.json
 
   creativecloud-gr_el:
     <<: *def
@@ -841,7 +841,7 @@ indices:
     <<: *merch-cards
     include:
       - /gr_el/cc-shared/fragments/merch/**/merch-card/**
-    target: /gr_el/cc-shared/assets/query-index-cards.xslx
+    target: /gr_el/cc-shared/assets/query-index-cards.json
 
   creativecloud-gt:
     <<: *def
@@ -857,7 +857,7 @@ indices:
     <<: *merch-cards
     include:
       - /gt/cc-shared/fragments/merch/**/merch-card/**
-    target: /gt/cc-shared/assets/query-index-cards.xslx
+    target: /gt/cc-shared/assets/query-index-cards.json
 
   creativecloud-id_en:
     <<: *def
@@ -873,7 +873,7 @@ indices:
     <<: *merch-cards
     include:
       - /id_en/cc-shared/fragments/merch/**/merch-card/**
-    target: /id_en/cc-shared/assets/query-index-cards.xslx
+    target: /id_en/cc-shared/assets/query-index-cards.json
 
   creativecloud-id_id:
     <<: *def
@@ -889,7 +889,7 @@ indices:
     <<: *merch-cards
     include:
       - /id_id/cc-shared/fragments/merch/**/merch-card/**
-    target: /id_id/cc-shared/assets/query-index-cards.xslx
+    target: /id_id/cc-shared/assets/query-index-cards.json
 
   creativecloud-in_hi:
     <<: *def
@@ -905,7 +905,7 @@ indices:
     <<: *merch-cards
     include:
       - /in_hi/cc-shared/fragments/merch/**/merch-card/**
-    target: /in_hi/cc-shared/assets/query-index-cards.xslx
+    target: /in_hi/cc-shared/assets/query-index-cards.json
 
   creativecloud-kw_ar:
     <<: *def
@@ -921,7 +921,7 @@ indices:
     <<: *merch-cards
     include:
       - /kw_ar/cc-shared/fragments/merch/**/merch-card/**
-    target: /kw_ar/cc-shared/assets/query-index-cards.xslx
+    target: /kw_ar/cc-shared/assets/query-index-cards.json
 
   creativecloud-kw_en:
     <<: *def
@@ -937,7 +937,7 @@ indices:
     <<: *merch-cards
     include:
       - /kw_en/cc-shared/fragments/merch/**/merch-card/**
-    target: /kw_en/cc-shared/assets/query-index-cards.xslx
+    target: /kw_en/cc-shared/assets/query-index-cards.json
 
   creativecloud-my_en:
     <<: *def
@@ -953,7 +953,7 @@ indices:
     <<: *merch-cards
     include:
       - /my_en/cc-shared/fragments/merch/**/merch-card/**
-    target: /my_en/cc-shared/assets/query-index-cards.xslx
+    target: /my_en/cc-shared/assets/query-index-cards.json
 
   creativecloud-my_ms:
     <<: *def
@@ -969,7 +969,7 @@ indices:
     <<: *merch-cards
     include:
       - /my_ms/cc-shared/fragments/merch/**/merch-card/**
-    target: /my_ms/cc-shared/assets/query-index-cards.xslx
+    target: /my_ms/cc-shared/assets/query-index-cards.json
 
   creativecloud-ng:
     <<: *def
@@ -985,7 +985,7 @@ indices:
     <<: *merch-cards
     include:
       - /ng/cc-shared/fragments/merch/**/merch-card/**
-    target: /ng/cc-shared/assets/query-index-cards.xslx
+    target: /ng/cc-shared/assets/query-index-cards.json
 
   creativecloud-pe:
     <<: *def
@@ -1001,7 +1001,7 @@ indices:
     <<: *merch-cards
     include:
       - /pe/cc-shared/fragments/merch/**/merch-card/**
-    target: /pe/cc-shared/assets/query-index-cards.xslx
+    target: /pe/cc-shared/assets/query-index-cards.json
 
   creativecloud-ph_en:
     <<: *def
@@ -1017,7 +1017,7 @@ indices:
     <<: *merch-cards
     include:
       - /ph_en/cc-shared/fragments/merch/**/merch-card/**
-    target: /ph_en/cc-shared/assets/query-index-cards.xslx
+    target: /ph_en/cc-shared/assets/query-index-cards.json
 
   creativecloud-ph_fil:
     <<: *def
@@ -1033,7 +1033,7 @@ indices:
     <<: *merch-cards
     include:
       - /ph_fil/cc-shared/fragments/merch/**/merch-card/**
-    target: /ph_fil/cc-shared/assets/query-index-cards.xslx
+    target: /ph_fil/cc-shared/assets/query-index-cards.json
 
   creativecloud-pr:
     <<: *def
@@ -1049,7 +1049,7 @@ indices:
     <<: *merch-cards
     include:
       - /pr/cc-shared/fragments/merch/**/merch-card/**
-    target: /pr/cc-shared/assets/query-index-cards.xslx
+    target: /pr/cc-shared/assets/query-index-cards.json
 
   creativecloud-qa_ar:
     <<: *def
@@ -1065,7 +1065,7 @@ indices:
     <<: *merch-cards
     include:
       - /qa_ar/cc-shared/fragments/merch/**/merch-card/**
-    target: /qa_ar/cc-shared/assets/query-index-cards.xslx
+    target: /qa_ar/cc-shared/assets/query-index-cards.json
 
   creativecloud-qa_en:
     <<: *def
@@ -1081,7 +1081,7 @@ indices:
     <<: *merch-cards
     include:
       - /qa_en/cc-shared/fragments/merch/**/merch-card/**
-    target: /qa_en/cc-shared/assets/query-index-cards.xslx
+    target: /qa_en/cc-shared/assets/query-index-cards.json
 
   creativecloud-vn_en:
     <<: *def
@@ -1097,7 +1097,7 @@ indices:
     <<: *merch-cards
     include:
       - /vn_en/cc-shared/fragments/merch/**/merch-card/**
-    target: /vn_en/cc-shared/assets/query-index-cards.xslx
+    target: /vn_en/cc-shared/assets/query-index-cards.json
     
   creativecloud-vn_vi:
     <<: *def
@@ -1113,7 +1113,7 @@ indices:
     <<: *merch-cards
     include:
       - /vn_vi/cc-shared/fragments/merch/**/merch-card/**
-    target: /vn_vi/cc-shared/assets/query-index-cards.xslx
+    target: /vn_vi/cc-shared/assets/query-index-cards.json
 
   creativecloud-dk:
     <<: *def
@@ -1129,7 +1129,7 @@ indices:
     <<: *merch-cards
     include:
       - /dk/cc-shared/fragments/merch/**/merch-card/**
-    target: /dk/cc-shared/assets/query-index-cards.xslx
+    target: /dk/cc-shared/assets/query-index-cards.json
 
   creativecloud-fi:
     <<: *def
@@ -1145,7 +1145,7 @@ indices:
     <<: *merch-cards
     include:
       - /fi/cc-shared/fragments/merch/**/merch-card/**
-    target: /fi/cc-shared/assets/query-index-cards.xslx
+    target: /fi/cc-shared/assets/query-index-cards.json
 
   creativecloud-no:
     <<: *def
@@ -1161,7 +1161,7 @@ indices:
     <<: *merch-cards
     include:
       - /no/cc-shared/fragments/merch/**/merch-card/**
-    target: /no/cc-shared/assets/query-index-cards.xslx
+    target: /no/cc-shared/assets/query-index-cards.json
 
   creativecloud-se:
     <<: *def
@@ -1177,7 +1177,7 @@ indices:
     <<: *merch-cards
     include:
       - /se/cc-shared/fragments/merch/**/merch-card/**
-    target: /se/cc-shared/assets/query-index-cards.xslx
+    target: /se/cc-shared/assets/query-index-cards.json
 
   creativecloud-la:
     <<: *def
@@ -1193,7 +1193,7 @@ indices:
     <<: *merch-cards
     include:
       - /la/cc-shared/fragments/merch/**/merch-card/**
-    target: /la/cc-shared/assets/query-index-cards.xslx
+    target: /la/cc-shared/assets/query-index-cards.json
 
   creativecloud-mx:
     <<: *def
@@ -1209,7 +1209,7 @@ indices:
     <<: *merch-cards
     include:
       - /mx/cc-shared/fragments/merch/**/merch-card/**
-    target: /mx/cc-shared/assets/query-index-cards.xslx
+    target: /mx/cc-shared/assets/query-index-cards.json
 
   creativecloud-be_nl:
     <<: *def
@@ -1225,7 +1225,7 @@ indices:
     <<: *merch-cards
     include:
       - /be_nl/cc-shared/fragments/merch/**/merch-card/**
-    target: /be_nl/cc-shared/assets/query-index-cards.xslx
+    target: /be_nl/cc-shared/assets/query-index-cards.json
 
   creativecloud-bg:
     <<: *def
@@ -1241,7 +1241,7 @@ indices:
     <<: *merch-cards
     include:
       - /bg/cc-shared/fragments/merch/**/merch-card/**
-    target: /bg/cc-shared/assets/query-index-cards.xslx
+    target: /bg/cc-shared/assets/query-index-cards.json
 
   creativecloud-ch_it:
     <<: *def
@@ -1257,7 +1257,7 @@ indices:
     <<: *merch-cards
     include:
       - /ch_it/cc-shared/fragments/merch/**/merch-card/**
-    target: /ch_it/cc-shared/assets/query-index-cards.xslx
+    target: /ch_it/cc-shared/assets/query-index-cards.json
 
   creativecloud-cz:
     <<: *def
@@ -1273,7 +1273,7 @@ indices:
     <<: *merch-cards
     include:
       - /cz/cc-shared/fragments/merch/**/merch-card/**
-    target: /cz/cc-shared/assets/query-index-cards.xslx
+    target: /cz/cc-shared/assets/query-index-cards.json
 
   creativecloud-ee:
     <<: *def
@@ -1289,7 +1289,7 @@ indices:
     <<: *merch-cards
     include:
       - /ee/cc-shared/fragments/merch/**/merch-card/**
-    target: /ee/cc-shared/assets/query-index-cards.xslx
+    target: /ee/cc-shared/assets/query-index-cards.json
 
   creativecloud-hu:
     <<: *def
@@ -1305,7 +1305,7 @@ indices:
     <<: *merch-cards
     include:
       - /hu/cc-shared/fragments/merch/**/merch-card/**
-    target: /hu/cc-shared/assets/query-index-cards.xslx
+    target: /hu/cc-shared/assets/query-index-cards.json
 
   creativecloud-il_he:
     <<: *def
@@ -1321,7 +1321,7 @@ indices:
     <<: *merch-cards
     include:
       - /il_he/cc-shared/fragments/merch/**/merch-card/**
-    target: /il_he/cc-shared/assets/query-index-cards.xslx
+    target: /il_he/cc-shared/assets/query-index-cards.json
 
   creativecloud-lv:
     <<: *def
@@ -1337,7 +1337,7 @@ indices:
     <<: *merch-cards
     include:
       - /lv/cc-shared/fragments/merch/**/merch-card/**
-    target: /lv/cc-shared/assets/query-index-cards.xslx
+    target: /lv/cc-shared/assets/query-index-cards.json
 
   creativecloud-mena_ar:
     <<: *def
@@ -1353,7 +1353,7 @@ indices:
     <<: *merch-cards
     include:
       - /mena_ar/cc-shared/fragments/merch/**/merch-card/**
-    target: /mena_ar/cc-shared/assets/query-index-cards.xslx
+    target: /mena_ar/cc-shared/assets/query-index-cards.json
 
   creativecloud-pt:
     <<: *def
@@ -1369,7 +1369,7 @@ indices:
     <<: *merch-cards
     include:
       - /pt/cc-shared/fragments/merch/**/merch-card/**
-    target: /pt/cc-shared/assets/query-index-cards.xslx
+    target: /pt/cc-shared/assets/query-index-cards.json
 
   creativecloud-ro:
     <<: *def
@@ -1385,7 +1385,7 @@ indices:
     <<: *merch-cards
     include:
       - /ro/cc-shared/fragments/merch/**/merch-card/**
-    target: /ro/cc-shared/assets/query-index-cards.xslx
+    target: /ro/cc-shared/assets/query-index-cards.json
 
   creativecloud-si:
     <<: *def
@@ -1401,7 +1401,7 @@ indices:
     <<: *merch-cards
     include:
       - /si/cc-shared/fragments/merch/**/merch-card/**
-    target: /si/cc-shared/assets/query-index-cards.xslx
+    target: /si/cc-shared/assets/query-index-cards.json
 
   creativecloud-sk:
     <<: *def
@@ -1417,7 +1417,7 @@ indices:
     <<: *merch-cards
     include:
       - /sk/cc-shared/fragments/merch/**/merch-card/**
-    target: /sk/cc-shared/assets/query-index-cards.xslx
+    target: /sk/cc-shared/assets/query-index-cards.json
     
   creativecloud-ua:
     <<: *def
@@ -1433,7 +1433,7 @@ indices:
     <<: *merch-cards
     include:
       - /ua/cc-shared/fragments/merch/**/merch-card/**
-    target: /ua/cc-shared/assets/query-index-cards.xslx
+    target: /ua/cc-shared/assets/query-index-cards.json
 
   creativecloud-sg:
     <<: *def
@@ -1449,7 +1449,7 @@ indices:
     <<: *merch-cards
     include:
       - /sg/cc-shared/fragments/merch/**/merch-card/**
-    target: /sg/cc-shared/assets/query-index-cards.xslx
+    target: /sg/cc-shared/assets/query-index-cards.json
 
   creativecloud-br:
     <<: *def
@@ -1465,7 +1465,7 @@ indices:
     <<: *merch-cards
     include:
       - /br/cc-shared/fragments/merch/**/merch-card/**
-    target: /br/cc-shared/assets/query-index-cards.xslx
+    target: /br/cc-shared/assets/query-index-cards.json
 
   creativecloud-cis_en:
     <<: *def
@@ -1481,7 +1481,7 @@ indices:
     <<: *merch-cards
     include:
       - /cis_en/cc-shared/fragments/merch/**/merch-card/**
-    target: /cis_en/cc-shared/assets/query-index-cards.xslx
+    target: /cis_en/cc-shared/assets/query-index-cards.json
 
   creativecloud-cis_ru:
     <<: *def
@@ -1497,4 +1497,4 @@ indices:
     <<: *merch-cards
     include:
       - /cis_ru/cc-shared/fragments/merch/**/merch-card/**
-    target: /cis_ru/cc-shared/assets/query-index-cards.xslx
+    target: /cis_ru/cc-shared/assets/query-index-cards.json
