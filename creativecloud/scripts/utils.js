@@ -37,6 +37,7 @@ export const [setLibs, getLibs] = (() => {
         return libs;
       }
       const branch = new URLSearchParams(window.location.search).get('milolibs') || 'main';
+      if (!/^[a-zA-Z0-9_-]+$/.test(branch)) throw new Error('Invalid branch name.');
       if (branch === 'local') { libs = 'http://localhost:6456/libs'; return libs; }
       if (branch.indexOf('--') > -1) { libs = `https://${branch}.hlx.live/libs`; return libs; }
       libs = `https://${branch}--milo--adobecom.hlx.live/libs`;
